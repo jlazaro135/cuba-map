@@ -1,0 +1,13 @@
+<footer class="footer">
+  <div class="footer-video">
+    <a href="https://www.youtube.com/watch?v=vF-FgEUBy3E" target="_blank" rel="noopener noreferrer">📽 {{this.langService.lang() === 'es' ? 'Cuba en video' : 'Cuba in video'}}</a>
+  </div>
+  <div class="footer-langs">
+    <div class="footer-lang">
+      <img class="footer-flag" (click)="toggleLang('es')" [ngClass]="{'footer-flag--selected': langService.lang() === 'es'}" src="assets/es.svg" alt="spanish">
+    </div>
+    <div class="footer-lang">
+      <img class="footer-flag" (click)="toggleLang('en')" [ngClass]="{'footer-flag--selected': langService.lang() === 'en'}" src="assets/en.svg" alt="english">
+    </div>
+  </div>
+</footer>

@@ -1,1 +1,30 @@
+@import url('assets/styles/normalize.css');
+* {
+  box-sizing: border-box;
+}
+
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.popup-content-btn{
+  background: hsla(39, 100%, 68%, 1);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  margin: auto;
+  cursor: pointer
+}
+
+.popup-content-btn:hover{
+  background: hsla(39, 100%, 50%, 1);
+}
+
+

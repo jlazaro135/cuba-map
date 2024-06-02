@@ -1,0 +1,17 @@
+<div class="popup-backdrop" (click)="closePopup()">
+  <div class="popup-content" (click)="$event.stopPropagation()" #content>
+    <span class="close-btn" (click)="closePopup()">&times;</span>
+    <div class="popup-content-wrapper">
+      <div class="popup-image-wrapper">
+        <img (load)="setDescriptionHeight()" class="popup-image" [src]="imgUrl()" [alt]="alt()">
+      </div>
+      <div class="popup-description-wrapper">
+        <h2 class="popup-content-title" #title>{{ photoTitle() }}</h2>
+        <div class="popup-description-overflow" [style.height]="isDesktop() ? descriptionHeight : 'auto'">
+          <p class="popup-content-description" [innerHTML]="description()">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
