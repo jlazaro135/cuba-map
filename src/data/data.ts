@@ -11,8 +11,7 @@ interface Cities {
   coords: LatLng
 }
 
-
-export const markerData: MarkerData[] = [
+export const markerData1: MarkerData[] = [
   {
     popupContent: {
       title: {
@@ -33,7 +32,17 @@ export const markerData: MarkerData[] = [
         <br><br>
         <a href="https://es.wikipedia.org/wiki/Centro_Habana" target="_blank">Saber más sobre Centro Habana</a>
         `,
-        en: 'This is a description',
+        en: `Centro Habana is located between the municipalities of Habana Vieja to the east, Plaza de la Revolución to the west, and the Malecón to the north,
+        bordering the Atlantic Ocean. This strategic position
+        places it in the heart of Havana, with easy access to many
+        of the city's main attractions.
+        <br><br>This municipality faces significant challenges
+        related to infrastructure deterioration
+        and the need for urban renewal.
+        Many buildings require urgent repairs due to years of neglect. However, the district also offers development opportunities, especially in tourism and culture. The revitalization of key areas could enhance the municipality's appeal to both residents and visitors.
+        <br><br>
+        <a href="https://en.wikipedia.org/wiki/Centro_Habana" target="_blank">Learn more about Centro Habana</a>
+        `,
       },
     },
     coordinates: [23.139154, -82.363582],
@@ -54,7 +63,12 @@ export const markerData: MarkerData[] = [
         <br><br>
         <a href="https://es.wikipedia.org/wiki/Plaza_Vieja_de_La_Habana" target="_blank">Saber más sobre la Plaza Vieja</a>
         `,
-        en: 'This is a description',
+        en: `Plaza Vieja was created in 1559 and originally known as Plaza Nueva. It was an open space used for military exercises and later as a market. Over the centuries, the plaza has undergone various transformations and witnessed numerous historical events, including public executions and popular celebrations.
+        <br><br>
+        It is a place of great importance in Havana, not only for its architectural beauty and history but also for its role as a cultural and social epicenter. It is a place that invites exploration and enjoyment, offering visitors an immersion in the essence of Cuban life.
+        <br><br>
+        <a href="https://en.wikipedia.org/wiki/Plaza_Vieja_(Havana)" target="_blank">Learn more about Plaza Vieja</a>
+        `,
       },
     },
     coordinates: [23.135886, -82.349988],
@@ -74,7 +88,11 @@ export const markerData: MarkerData[] = [
         <br><br>
         La zona está poco explotada turísticamente, a diferencia de las playas y cayos del norte de la isla, como Varadero o Cayo Santamaría. La zona es ideal para actividades como el snorkeling y el buceo, permitiendo a los bañistas observar una amplia variedad de peces y corales.
         `,
-        en: 'This is a description',
+        en: `Playa Ancón could be considered the beach of the city of Trinidad as it is only a few kilometers away.
+        The day we visited, the water temperature was 32º, too hot even for the locals, who said the sea had rarely been so warm.
+        <br><br>
+        The area is less touristically developed compared to the beaches and cays of the island's north, such as Varadero or Cayo Santa María. The area is ideal for activities such as snorkeling and diving, allowing bathers to observe a wide variety of fish and corals.
+        `,
       },
     },
     coordinates: [21.733421, -79.997907],
@@ -97,7 +115,13 @@ export const markerData: MarkerData[] = [
         "pedraplén" que literalmente está construida sobre el mar Caribe, conectando la isla con los cayos pertenecientes a al archipiélago Jardines del Rey.
         La playa y el mar se fusionan para crear una escena bucólica, superando cualquier expectativa que teníamos sobre el Caribe.
         `,
-        en: 'This is a description',
+        en: `The cays of Cuba are a group of islands and islets located along the coast of the main island of Cuba.
+        They are known for their stunning white sand beaches, crystal clear waters, and unique marine biodiversity.
+        <br><br>
+        We chose Cayo Santa María, located north of the province of Villa Clara. To get there, you have to cross a road called the
+        "pedraplén," which is literally built over the Caribbean Sea, connecting the island with the cays belonging to the Jardines del Rey archipelago.
+        The beach and the sea merge to create a bucolic scene, surpassing any expectations we had of the Caribbean.
+        `,
       },
     },
     coordinates: [22.660819, -79.044007],
@@ -122,7 +146,191 @@ export const markerData: MarkerData[] = [
         escritores, políticos y científicos. Entre ellos se encuentran el músico Ibrahim Ferrer y
         el escritor Alejo Carpentier.
         `,
-        en: 'This is a description',
+        en: `It is the main cemetery of Havana, Cuba, and one of the most notable in Latin America.
+        Inaugurated in 1876, this cemetery is famous for its impressive architecture, sculptures, and mausoleums, reflecting a rich cultural and artistic history.
+        <br><br>
+        It is not only a resting place for the deceased but also an open-air museum that offers a profound insight into the history, culture, and art of Cuba.
+        It is the final resting place of many important personalities in Cuban history, including artists, writers, politicians, and scientists. Among them are musician Ibrahim Ferrer and writer Alejo Carpentier.
+        `,
+      },
+    },
+    coordinates: [23.124576, -82.400125],
+  },
+  {
+    popupContent: {
+      title: {
+        es: 'La Perla del Sur',
+        en: 'The Pearl of the South',
+      },
+      imgUrl: 'assets/pictures/cienfuegos.webp',
+      alt: 'cienfuegos',
+      description: {
+        es: `
+        Una ciudad que lleva el nombre del mariscal de campo José Cienfuegos Jovellanos.
+        El trazado original de la ciudad sigue la forma rectangular tradicional,
+        con calles que se entrecruzan en ángulos rectos.
+        <br><br>
+        Los turistas suelen pasear por el
+        boulevar San Fernando, el paseo del Prado, que separa a la ciudad de la famosa
+        bahía, uno de los paisajes naturales más espectaculares de Cuba.
+        Entre los principales puntos de interés están el teatro Tomás Terry, el Palacio de Valle, la Catedral de la Purísima Concepción y
+        el parque José Martí, así como el Arco de Triunfo y el cementerio de Reina.
+        `,
+        en: `A city named after Field Marshal José Cienfuegos Jovellanos.
+        The original layout of the city follows the traditional rectangular shape,
+        with streets intersecting at right angles.
+        <br><br>
+        Tourists often stroll along San Fernando Boulevard, the Paseo del Prado, which separates the city from the famous bay, one of the most spectacular natural landscapes in Cuba.
+        Major points of interest include the Tomás Terry Theater, the Palacio de Valle, the Cathedral of the Immaculate Conception, and José Martí Park, as well as the Arch of Triumph and the Reina Cemetery.
+        `,
+      },
+    },
+    coordinates: [22.146071, -80.435137],
+  },
+];
+
+
+export const markerData: MarkerData[] = [
+  {
+    popupContent: {
+      title: {
+        es: 'Centro Habana',
+        en: 'Habana Centre',
+      },
+      imgUrl: 'assets/pictures/old_havana.webp',
+      alt: 'galiano',
+      description: {
+        es: `Centro Habana se encuentra entre los municipios de Habana Vieja al este, Plaza de la Revolución al oeste, y el malecón al norte,
+        bordeando el océano Atlántico. Esta posición estratégica
+        lo sitúa en el corazón de La Habana, con fácil acceso a muchas
+        de las principales atracciones de la ciudad.
+        <br><br>Este municipio enfrenta desafíos significativos
+        relacionados con el deterioro de la infraestructura
+        y la necesidad de renovación urbana.
+        Muchos edificios requieren reparaciones urgentes debido a años de falta de mantenimiento. Sin embargo, el distrito también ofrece oportunidades de desarrollo, especialmente en el ámbito del turismo y la cultura. La revitalización de áreas clave podría impulsar el atractivo del municipio tanto para residentes como para visitantes.
+        <br><br>
+        <a href="https://es.wikipedia.org/wiki/Centro_Habana" target="_blank">Saber más sobre Centro Habana</a>
+        `,
+        en: `Centro Habana is located between the municipalities of Habana Vieja to the east, Plaza de la Revolución to the west, and the Malecón to the north,
+        bordering the Atlantic Ocean. This strategic position
+        places it in the heart of Havana, with easy access to many
+        of the city's main attractions.
+        <br><br>This municipality faces significant challenges
+        related to infrastructure deterioration
+        and the need for urban renewal.
+        Many buildings require urgent repairs due to years of neglect. However, the district also offers development opportunities, especially in tourism and culture. The revitalization of key areas could enhance the municipality's appeal to both residents and visitors.
+        <br><br>
+        <a href="https://en.wikipedia.org/wiki/Centro_Habana" target="_blank">Learn more about Centro Habana</a>
+        `,
+      },
+    },
+    coordinates: [23.139154, -82.363582],
+  },
+  {
+    popupContent: {
+      title: {
+        es: 'Plaza Vieja',
+        en: 'Plaza Vieja',
+      },
+      imgUrl: 'assets/pictures/plaza-vieja.webp',
+      alt: 'plaza-vieja',
+      description: {
+        es: `
+        La Plaza Vieja fue creada en 1559 y originalmente se conocía como Plaza Nueva. Fue un espacio abierto utilizado para ejercicios militares y, más tarde, como un mercado. A lo largo de los siglos, la plaza ha pasado por diversas transformaciones y ha sido testigo de múltiples acontecimientos históricos, incluyendo ejecuciones públicas y celebraciones populares.
+        <br><br>
+        Es un lugar de gran importancia en La Habana, no solo por su belleza arquitectónica y su historia, sino también por su papel como epicentro cultural y social. Es un lugar que invita a ser explorado y disfrutado, ofreciendo a los visitantes una inmersión en la esencia de la vida cubana.
+        <br><br>
+        <a href="https://es.wikipedia.org/wiki/Plaza_Vieja_de_La_Habana" target="_blank">Saber más sobre la Plaza Vieja</a>
+        `,
+        en: `Plaza Vieja was created in 1559 and originally known as Plaza Nueva. It was an open space used for military exercises and later as a market. Over the centuries, the plaza has undergone various transformations and witnessed numerous historical events, including public executions and popular celebrations.
+        <br><br>
+        It is a place of great importance in Havana, not only for its architectural beauty and history but also for its role as a cultural and social epicenter. It is a place that invites exploration and enjoyment, offering visitors an immersion in the essence of Cuban life.
+        <br><br>
+        <a href="https://en.wikipedia.org/wiki/Plaza_Vieja_(Havana)" target="_blank">Learn more about Plaza Vieja</a>
+        `,
+      },
+    },
+    coordinates: [23.135886, -82.349988],
+  },
+  {
+    popupContent: {
+      title: {
+        es: 'Playa Ancón',
+        en: 'Ancon Beach',
+      },
+      imgUrl: 'assets/pictures/ancoa.webp',
+      alt: 'ancon-beach',
+      description: {
+        es: `
+        Se podría decir que Playa Ancón es la playa de la ciudad de Trinidad porque solo distan unos pocos kilometros
+        de ella. El día que la visitamos el agua marcaba 32º, demasiado caliente incluso para la gente local, que aseguraban que pocas veces el mar había estado tan caliente.
+        <br><br>
+        La zona está poco explotada turísticamente, a diferencia de las playas y cayos del norte de la isla, como Varadero o Cayo Santamaría. La zona es ideal para actividades como el snorkeling y el buceo, permitiendo a los bañistas observar una amplia variedad de peces y corales.
+        `,
+        en: `Playa Ancón could be considered the beach of the city of Trinidad as it is only a few kilometers away.
+        The day we visited, the water temperature was 32º, too hot even for the locals, who said the sea had rarely been so warm.
+        <br><br>
+        The area is less touristically developed compared to the beaches and cays of the island's north, such as Varadero or Cayo Santa María. The area is ideal for activities such as snorkeling and diving, allowing bathers to observe a wide variety of fish and corals.
+        `,
+      },
+    },
+    coordinates: [21.733421, -79.997907],
+  },
+  {
+    popupContent: {
+      title: {
+        es: 'Cayo Santa María',
+        en: 'Cayo Santa Maria',
+      },
+      imgUrl: 'assets/pictures/cayo.webp',
+      alt: 'cayo-beach',
+      description: {
+        es: `
+        Los cayos de Cuba son un conjunto de islas
+        e islotes que se encuentran a lo largo de la costa de la isla principal de Cuba.
+        Son conocidos por sus impresionantes playas de arena blanca, aguas cristalinas y una biodiversidad marina única
+        <br><br>
+        Nosotros elegimos el Cayo de Santa María, situado al norte de la provincia de Villa Clara. Para llegar hay que pasar una carretera que denominan como
+        "pedraplén" que literalmente está construida sobre el mar Caribe, conectando la isla con los cayos pertenecientes a al archipiélago Jardines del Rey.
+        La playa y el mar se fusionan para crear una escena bucólica, superando cualquier expectativa que teníamos sobre el Caribe.
+        `,
+        en: `The cays of Cuba are a group of islands and islets located along the coast of the main island of Cuba.
+        They are known for their stunning white sand beaches, crystal clear waters, and unique marine biodiversity.
+        <br><br>
+        We chose Cayo Santa María, located north of the province of Villa Clara. To get there, you have to cross a road called the
+        "pedraplén," which is literally built over the Caribbean Sea, connecting the island with the cays belonging to the Jardines del Rey archipelago.
+        The beach and the sea merge to create a bucolic scene, surpassing any expectations we had of the Caribbean.
+        `,
+      },
+    },
+    coordinates: [22.660819, -79.044007],
+  },
+  {
+    popupContent: {
+      title: {
+        es: 'Necrópolis de Cristobal Colón',
+        en: 'Colon Cemetery',
+      },
+      imgUrl: 'assets/pictures/cementerio.webp',
+      alt: 'cemetery',
+      description: {
+        es: `
+        Es el principal cementerio de La Habana, Cuba, y uno de los más destacados de América Latina.
+        Inaugurado en 1876, este cementerio es famoso por su impresionante arquitectura, esculturas y
+        mausoleos, que reflejan una rica historia cultural y artística.
+        <br><br>
+        No solo es un lugar de descanso para los difuntos, sino también un museo al aire libre
+        que ofrece una profunda visión de la historia, la cultura y el arte de Cuba.
+        Es el lugar de descanso final de muchas personalidades importantes de la historia cubana, incluyendo artistas,
+        escritores, políticos y científicos. Entre ellos se encuentran el músico Ibrahim Ferrer y
+        el escritor Alejo Carpentier.
+        `,
+        en: `It is the main cemetery of Havana, Cuba, and one of the most notable in Latin America.
+        Inaugurated in 1876, this cemetery is famous for its impressive architecture, sculptures, and mausoleums, reflecting a rich cultural and artistic history.
+        <br><br>
+        It is not only a resting place for the deceased but also an open-air museum that offers a profound insight into the history, culture, and art of Cuba.
+        It is the final resting place of many important personalities in Cuban history, including artists, writers, politicians, and scientists. Among them are musician Ibrahim Ferrer and writer Alejo Carpentier.
+        `,
       },
     },
     coordinates: [23.124576, -82.400125],
@@ -149,7 +357,13 @@ export const markerData: MarkerData[] = [
         <br><br>
         <a href="https://es.wikipedia.org/wiki/Cienfuegos" target="_blank">Saber más sobre Cienfuegos</a>
         `,
-        en: 'This is a description',
+        en: `Cienfuegos, known as The Pearl of the South, is a city on the southern coast of Cuba.
+        Founded in 1819 by French settlers, the city is distinguished by its neoclassical architecture and its peaceful and welcoming atmosphere.
+        <br><br>
+        Among the main attractions of Cienfuegos are José Martí Park, Tomás Terry Theater, and Palacio de Valle.
+        The city also has a natural port, which has been vital for its economic and social development.
+        It is an ideal destination for those looking to explore the history and culture of Cuba in a relaxed setting.
+        `,
       },
     },
     coordinates: [22.144573, -80.444073],
@@ -171,10 +385,14 @@ export const markerData: MarkerData[] = [
         "Coti" era la mascota de la vecina y aunque no podía volar por un problema en una de sus alas, no le impedía
         escalar entre los cables de los postes de luz hasta la terraza de nuestros hospedadores. Nos cautivó desde el primer momento. Demandaba su correspondiente porción de Guayaba que
         degustaba como un huesped más. Al terminar su ración, recorría el camino de vuelta a su casa a través de el enjambre de cables, hasta la siguiente comida.
-
-
         `,
-        en: 'This is a description',
+        en: `During our stay in Playa Larga (Bay of Pigs), we stayed at Ilaria and Amauri's house, and their hospitality was wonderful.
+        The house had a terrace where Ilaria and Amauri served breakfasts and dinners. During these meals, we would receive visits
+        from the Cuban parrot in the picture.
+        <br><br>
+        "Coti" was the neighbor's pet and although it couldn't fly due to a problem with one of its wings, it didn't stop it
+        from climbing among the wires of the light poles to the terrace of our hosts. We were captivated from the first moment. It demanded its corresponding portion of guava, which it savored like a guest. Once it finished its portion, it would make its way back home through the tangle of wires, until the next meal.
+        `,
       },
     },
     coordinates: [22.280276, -81.214231],
@@ -200,7 +418,16 @@ export const markerData: MarkerData[] = [
         lugar. A día de hoy este edificio alberga el Museo de la Ciudad de La Habana.
 
         `,
-        en: 'This is a description',
+        en: `El Palacio de los Capitanes Generales sirvió como residencia oficial de los capitanes generales, quienes
+        eran los máximos representantes de la autoridad española en la isla. Además de ser la sede del
+        gobierno colonial, el edificio también albergó la Casa de Gobierno y la Real Audiencia de La Habana,
+        desempeñando un papel central en la administración de la colonia. Este edificio es un buen ejemplo de la arquitectura barroca cubana.
+        <br><br>
+        Con la independencia de Cuba en 1898, el palacio pasó a ser la residencia de los gobernadores cubanos
+        y más tarde, de los presidentes de la república. En 1902, después de la independencia, el edificio
+        fue adaptado para ser utilizado como Palacio Presidencial hasta 1920, cuando se trasladó a otro
+        lugar. A día de hoy este edificio alberga el Museo de la Ciudad de La Habana.
+        `,
       },
     },
     coordinates: [23.140022, -82.349811],
@@ -229,7 +456,20 @@ export const markerData: MarkerData[] = [
         <br><br>
         <a href="https://es.wikipedia.org/wiki/La_Habana_Vieja" target="_blank">Saber más sobre Habana Vieja</a>
         `,
-        en: 'This is a description',
+        en: `La Habana Vieja, el casco histórico de la capital cubana, es una zona llena de historia y que fue
+        declarada Patrimonio de la Humanidad por la UNESCO en 1982. Este distrito es conocido por su
+        arquitectura colonial bien conservada, calles adoquinadas, y una atmósfera que evoca la rica herencia
+        cultural de Cuba.
+        <br><br>
+        El estado de conservación de los edificios en La Habana Vieja varía considerablemente.
+        Muchos de ellos han sido restaurados y mantenidos en buen estado, especialmente aquellos ubicados
+        en áreas de alto interés turístico y cultural. Este esfuerzo de restauración ha sido en gran parte
+        posible gracias a la Oficina del Historiador de la Ciudad de La Habana, dirigida durante muchos años
+        por el historiador Eusebio Leal, quien jugó un papel crucial en la revitalización
+        del centro histórico.
+        <br><br>
+        <a href="https://es.wikipedia.org/wiki/La_Habana_Vieja" target="_blank">Saber más sobre Habana Vieja</a>
+        `,
       },
     },
     coordinates: [23.142325, -82.354424],
@@ -252,7 +492,7 @@ export const markerData: MarkerData[] = [
         en este sentido, ya que aún sigue siendo notable la presencia de modelos de "Ladas" o "Moskvitchs" por
         diferentes ciudades del país.
         `,
-        en: 'This is a description',
+        en: ` The car park in Cuba is very varied, ranging from classic American cars with their recognizable aesthetics to modern cars (mainly of Chinese origin), including carts and electric motorcycles. It is even quite common to use animals as a means of transport. <br><br> The Soviet influence that was experienced in Cuba for decades was noticeable in this sense, as the presence of "Ladas" or "Moskvitchs" models is still notable in different cities of the country.`,
       },
     },
     coordinates: [23.143935, -82.355093],
@@ -278,7 +518,7 @@ export const markerData: MarkerData[] = [
         habilidad y entusiasmo, desafiando las olas y disfrutando de la libertad que les ofrece el mar.
 
         `,
-        en: 'This is a description',
+        en: `The Malecón in Havana is an iconic seafront promenade that stretches for approximately 8 kilometers along the northern coast of the city, from the Castillo de San Salvador de la Punta in Old Havana to the Miramar neighborhood in the west. Built in several stages between 1901 and 1952, the Malecón is one of the most iconic and frequented places in the Cuban capital. <br><br> It is common to see children and young people jumping into the sea from the concrete wall that borders the promenade. These jumps into the sea are not only a form of fun and recreation for the children, but also a tradition that has been passed down from generation to generation. The children usually dive into the water with great skill and enthusiasm, challenging the waves and enjoying the freedom that the sea offers them.`,
       },
     },
     coordinates: [23.141835, -82.372465],
@@ -302,7 +542,7 @@ export const markerData: MarkerData[] = [
         se encuentran los principales edificios históricos de la ciudad lleva su nombre y en el centro de la misma podemos
         encontrar esta escultura.
         `,
-        en: 'This is a description',
+        en: `José Martí (1853-1895) was a prominent Cuban poet, essayist, journalist, and politician, considered one of Cuba's greatest national heroes. Known as "The Apostle of Independence," Martí dedicated his life to the struggle for Cuba's independence from Spanish rule. <br><br> It is very common to find busts, posters, or statues of this national hero. In Cienfuegos, the park where the main historical buildings of the city are located bears his name, and in the center of it, we can find this sculpture.`,
       },
     },
     coordinates: [22.145973, -80.452979],
@@ -327,7 +567,15 @@ export const markerData: MarkerData[] = [
         ha sido un crisol de influencias culturales desde su fundación en 1819
         por colonos franceses, lo que ha dejado una marca indeleble en su desarrollo cultural y artístico.
         `,
-        en: 'This is a description',
+        en: `Casa Ferrer was a private residence, but over time it has been used for various
+        purposes. Currently, after a series of restorations, the building houses the headquarters of the
+        Office of Conservation and Restoration of Cienfuegos, as well as being a cultural and artistic center.
+        <br><br>
+
+        The cultural movement of Cienfuegos is vibrant and
+        diverse, reflecting both its historical roots and its contemporary dynamism. Cienfuegos
+        has been a melting pot of cultural influences since its founding in 1819
+        by French settlers, leaving an indelible mark on its cultural and artistic development.`,
       },
     },
     coordinates: [22.146169, -80.452045],
@@ -351,7 +599,15 @@ export const markerData: MarkerData[] = [
         sido restaurados para preservar su valor histórico. Las fachadas coloridas, los balcones de hierro
         forjado y las puertas de madera tallada crean un ambiente pintoresco y encantador. El pavimento
         adoquinado y la estrechez de la calle contribuyen a su atmósfera acogedora y peatonal.        `,
-        en: 'This is a description',
+        en: `Obispo Street is one of the most famous and busiest thoroughfares in Old Havana, Cuba.
+        This pedestrian thoroughfare, which extends from Plaza de Armas to Avenida del Puerto, is a bustling corridor that reflects the rich history
+        and vibrant cultural life of the city.
+        <br><br>
+
+        The street is lined with colonial and neoclassical buildings, many of which have
+        been restored to preserve their historical value. The colorful facades, wrought iron balconies,
+        and carved wooden doors create a picturesque and charming atmosphere. The cobblestone pavement
+        and the narrowness of the street contribute to its cozy and pedestrian-friendly atmosphere.`,
       },
     },
     coordinates: [23.137564, -82.356947],
@@ -373,7 +629,7 @@ export const markerData: MarkerData[] = [
         En Cuba se cultivan varias variedades de plátano, tanto de plátano macho (utilizado generalmente
         para cocinar) como de plátano fruta (consumido crudo). Algunas de las variedades más comunes
         incluyen el plátano burro, el plátano macho y el plátano enano. Cada variedad tiene características específicas en cuanto a tamaño, sabor y usos culinarios.        `,
-        en: 'This is a description',
+        en: `Banana plantations in Cuba are a vital part of the island's agriculture and economy. Bananas are one of the country's most important crops, both for local consumption and for export. <br><br> Several varieties of bananas are cultivated in Cuba, both plantains (usually used for cooking) and dessert bananas (consumed raw). Some of the most common varieties include burro bananas, plantains, and dwarf bananas. Each variety has specific characteristics in terms of size, flavor, and culinary uses.`,
       },
     },
     coordinates: [21.962393, -80.061878],
@@ -396,8 +652,9 @@ export const markerData: MarkerData[] = [
         El Salto del Venado es una de las cascadas más impresionantes de Topes de Collantes.
         Se encuentra enclavado en un hermoso entorno natural y es accesible a través de un sendero
         moderado desde el centro de visitantes. La cascada cae en una piscina natural, ofreciendo a los
-        visitantes la oportunidad de nadar y refrescarse en sus aguas cristalinas.        `,
-        en: 'This is a description',
+        visitantes la oportunidad de nadar y refrescarse en sus aguas cristalinas.
+        `,
+        en: `Topes de Collantes is a natural reserve located in the Escambray Mountains, in the province of Sancti Spíritus, Cuba. This protected area is famous for its lush vegetation, waterfalls, rivers, and caves, as well as its diversity of flora and fauna. It is a popular destination for ecotourism and hiking, offering visitors the opportunity to explore Cuba's natural beauty. <br><br> El Salto del Venado is one of the most impressive waterfalls in Topes de Collantes. It is nestled in a beautiful natural setting and is accessible via a moderate trail from the visitor center. The waterfall cascades into a natural pool, offering visitors the opportunity to swim and cool off in its crystal-clear waters.`,
       },
     },
     coordinates: [21.965210, -80.058220],
@@ -422,7 +679,7 @@ export const markerData: MarkerData[] = [
         y es un lugar emblemático para los visitantes.
         Es un tesoro histórico y cultural que ha sido declarado Patrimonio de la Humanidad por la UNESCO.
         `,
-        en: 'This is a description',
+        en: `Trinidad was founded in 1514 by the Spanish conquistador Diego Velázquez de Cuéllar. During the 16th and 17th centuries, the city thrived due to the sugar industry and the slave trade. This period of wealth is reflected in its impressive colonial architecture, with cobblestone streets, paved squares, and colorful colonial houses with red tile roofs. <br><br> The Plaza Mayor, the heart of Trinidad, is surrounded by elegant colonial buildings and is a landmark for visitors. It is a historical and cultural treasure that has been declared a UNESCO World Heritage Site.`,
       },
     },
     coordinates: [21.804981, -79.984109],
@@ -444,7 +701,8 @@ export const markerData: MarkerData[] = [
         historia y un legado de liderazgo, la Universidad de La Habana es un símbolo de orgullo nacional y
         un faro de aprendizaje e innovación en Cuba.
         `,
-        en: 'This is a description',
+        en: `La Universidad de La Habana, founded in 1728, is a prominent academic institution in Cuba and one of the oldest in Latin America. Recognized for its academic excellence, innovative research, and social commitment, the university is a center of higher education that promotes equity and internationalization while enriching the cultural life of the region. With a rich history and a legacy of leadership, the University of Havana is a symbol of national pride and a beacon of learning and innovation in Cuba.
+        `,
       },
     },
     coordinates: [23.136071, -82.381981],
@@ -469,7 +727,15 @@ export const markerData: MarkerData[] = [
         miradores es simplemente impresionante, con la combinación de colores de la vegetación y los
         mogotes creando una postal inolvidable.
         `,
-        en: 'This is a description',
+        en: `El Valle de Viñales, ubicado en la provincia de Pinar del Río en el extremo oeste de Cuba,
+        es un espectacular paisaje kárstico reconocido como Patrimonio de la Humanidad por
+        la UNESCO desde 1999.
+        <br><br>
+        El valle ofrece paisajes impresionantes que incluyen exuberantes campos de cultivo, palmares,
+        cuevas y mogotes que se elevan majestuosamente desde el suelo. La vista panorámica desde los
+        miradores es simplemente impresionante, con la combinación de colores de la vegetación y los
+        mogotes creando una postal inolvidable.
+        `,
       },
     },
     coordinates: [22.596526, -83.724505],
@@ -492,7 +758,16 @@ export const markerData: MarkerData[] = [
         Disfrutamos de una visita guiada en coche de época por este parque nacional, donde pudimos divisar
         diferentes especies de aves como flamenco, garzas o gavilán colilargo.
         `,
-        en: 'This is a description',
+        en: `
+        La Ciénaga de Zapata es conocida por su extraordinaria biodiversidad, siendo uno de los ecosistemas
+        más diversos de Cuba y del Caribe. Alberga una gran variedad de hábitats, incluyendo bosques de
+        mangle, marismas, lagunas costeras, manglares y áreas de sabana, que proporcionan refugio y
+        alimentación para una amplia gama de especies de flora y fauna.
+        <br><br>
+        Disfrutamos de una visita guiada en coche de época por este parque nacional, donde pudimos divisar
+        diferentes especies de aves como flamenco, garzas o gavilán colilargo.
+
+        `,
       },
     },
     coordinates: [22.275483, -81.220244],

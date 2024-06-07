@@ -105,7 +105,7 @@ export class AppComponent {
   // Set the initial set of displayed layers (we could also use the leafletLayers input binding for this)
   options = {
     layers: [ this.streetMaps ],
-    zoom: 7,
+    zoom: this.isDesktop(),
     center: latLng(22.5, -80.5),
     maxBounds: this.bounds,
     maxBoundsViscosity: 0.5
@@ -115,7 +115,7 @@ export class AppComponent {
     this.langService.setLanguageFromBrowser();
     this.markerClusterGroup = markerClusterGroup({removeOutsideVisibleBounds: true});
     const coords = this.cities.map(city => `${city.coords.lng},${city.coords.lat}`).join(';');
-    const url = `http://router.project-osrm.org/route/v1/driving/${coords}?overview=full&geometries=geojson`
+    const url = `https://router.project-osrm.org/route/v1/driving/${coords}?overview=full&geometries=geojson`
     fetch(url)
       .then(response => response.json())
       .then(data => {
@@ -188,5 +188,10 @@ export class AppComponent {
     this.popups.forEach(popup => {
       this.map.closePopup(popup);
     });
+  }
+
+  isDesktop(){
+    if(window.screen.width > 1200) return 7
+    return 6
   }
 }
