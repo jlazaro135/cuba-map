@@ -1,0 +1,13 @@
+<div class="map"
+  leaflet
+  [leafletOptions]="options"
+  [leafletLayers]="markers"
+  (leafletMapReady)="onMapReady($event)"
+  >
+</div>
+
+<app-footer />
+
+<!-- @if (showPopup) {
+  <modal (close)="closePopup()"/>
+} -->

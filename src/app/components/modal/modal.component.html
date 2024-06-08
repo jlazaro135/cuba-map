@@ -3,7 +3,8 @@
     <span class="close-btn" (click)="closePopup()">&times;</span>
     <div class="popup-content-wrapper">
       <div class="popup-image-wrapper">
-        <img (load)="setDescriptionHeight()" class="popup-image" [src]="imgUrl()" [alt]="alt()">
+        <!-- <img (load)="setDescriptionHeight()" class="popup-image" [src]="imgUrl()" [alt]="alt()"> -->
+         <custom-gallery />
       </div>
       <div class="popup-description-wrapper">
         <h2 class="popup-content-title" #title>{{ photoTitle() }}</h2>

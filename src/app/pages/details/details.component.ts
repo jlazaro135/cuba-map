@@ -1,16 +1,16 @@
 import { Component, ElementRef, EventEmitter, Output, ViewChild, computed, inject } from '@angular/core';
 import { PopupService } from '../../services/popup.service';
 import { LangService } from '../../services/lang.service';
-import { CustomGalleryComponent } from '../galllery/gallery.component';
+import { CustomGalleryComponent } from '../../components/galllery/gallery.component';
 
 @Component({
-  selector: 'modal',
+  selector: 'details-view',
   standalone: true,
   imports: [CustomGalleryComponent],
-  templateUrl: './modal.component.html',
-  styleUrl: './modal.component.css'
+  templateUrl: './details.component.html',
+  styleUrl: './details.component.css'
 })
-export class ModalComponent {
+export class DetailsComponent {
   @Output() close = new EventEmitter<void>();
 
   @ViewChild('content') contentElement!: ElementRef;

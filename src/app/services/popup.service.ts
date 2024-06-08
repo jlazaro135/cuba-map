@@ -10,5 +10,5 @@ export class PopupService {
 
   constructor() { }
 
-  popupContent: PopupContent = {title: {es:'', en:''}, description: {es:'', en:''},alt: '',imgUrl: ''}
+  popupContent: PopupContent = {title: {es:'Un titulo', en:'A title'}, description: {es:'Una descripcion', en:' A description'},alt: '',imgUrl: ''}
 }

@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <header class="back">
+    Volver Atrás
+  </header>
+  <main class="content-wrapper">
+    <div class="image-wrapper">
+      <!-- <img (load)="setDescriptionHeight()" class="image" [src]="imgUrl()" [alt]="alt()"> -->
+       <custom-gallery />
+    </div>
+    <div class="description-wrapper">
+      <h2 class="content-title" #title>{{ photoTitle() }}</h2>
+      <p class="content-description" [innerHTML]="description()">
+      </p>
+    </div>
+  </main>
+
+</div>
