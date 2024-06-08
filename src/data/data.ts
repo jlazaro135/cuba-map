@@ -727,14 +727,13 @@ export const markerData: MarkerData[] = [
         miradores es simplemente impresionante, con la combinación de colores de la vegetación y los
         mogotes creando una postal inolvidable.
         `,
-        en: `El Valle de Viñales, ubicado en la provincia de Pinar del Río en el extremo oeste de Cuba,
-        es un espectacular paisaje kárstico reconocido como Patrimonio de la Humanidad por
-        la UNESCO desde 1999.
+        en: `The Viñales Valley, located in the province of Pinar del Río in the westernmost part of Cuba,
+        is a spectacular karst landscape recognized as a UNESCO World Heritage Site since 1999.
         <br><br>
-        El valle ofrece paisajes impresionantes que incluyen exuberantes campos de cultivo, palmares,
-        cuevas y mogotes que se elevan majestuosamente desde el suelo. La vista panorámica desde los
-        miradores es simplemente impresionante, con la combinación de colores de la vegetación y los
-        mogotes creando una postal inolvidable.
+        The valley offers breathtaking landscapes that include lush fields, palm groves,
+        caves, and mogotes that rise majestically from the ground. The panoramic view from the
+        lookout points is simply stunning, with the combination of colors from the vegetation and the
+        mogotes creating an unforgettable postcard.
         `,
       },
     },
@@ -759,13 +758,14 @@ export const markerData: MarkerData[] = [
         diferentes especies de aves como flamenco, garzas o gavilán colilargo.
         `,
         en: `
-        La Ciénaga de Zapata es conocida por su extraordinaria biodiversidad, siendo uno de los ecosistemas
-        más diversos de Cuba y del Caribe. Alberga una gran variedad de hábitats, incluyendo bosques de
-        mangle, marismas, lagunas costeras, manglares y áreas de sabana, que proporcionan refugio y
-        alimentación para una amplia gama de especies de flora y fauna.
+        The Zapata Swamp is known for its extraordinary biodiversity, being one of the most diverse ecosystems
+        in Cuba and the Caribbean. It hosts a wide variety of habitats, including mangrove forests,
+        marshes, coastal lagoons, mangroves, and savannah areas, which provide shelter and
+        food for a wide range of flora and fauna species.
         <br><br>
-        Disfrutamos de una visita guiada en coche de época por este parque nacional, donde pudimos divisar
-        diferentes especies de aves como flamenco, garzas o gavilán colilargo.
+        We enjoyed a guided tour by vintage car through this national park, where we were able to spot
+        different bird species such as flamingos, herons, or long-legged hawks.
+
 
         `,
       },
