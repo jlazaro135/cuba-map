@@ -1,4 +1,6 @@
 @import url('assets/styles/normalize.css');
+@import '../node_modules/@angular/cdk/overlay-prebuilt.css';
+
 * {
   box-sizing: border-box;
 }
@@ -25,6 +27,14 @@ html, body {
 
 .popup-content-btn:hover{
   background: hsla(39, 100%, 50%, 1);
+}
+
+.gallery-core-cover gallery-core .g-image-item{
+  object-fit: cover;
+}
+
+.gallery-core-contain gallery-core .g-image-item{
+  object-fit: contain;
 }
 
 

@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Status
+
+1. hay que cribar imagenes que se quieren incluir. Las de la nikon estan ya en la carpeta Cuba, hay que cribar videos e imagenes de google fotos
+
+2. hay que convertir todo a formato webp o webm
+
+3. hay que crear nuevos puntos de interés y hay que añadir el nuevo objeto "galleryData" a todos los objetos actuales
+
+4. Necesario dar algo de estilos a la vista de detalles, está muy soso.
+
+5. Como extra, se puede crear un espacio para comentar o favear, usando Xano

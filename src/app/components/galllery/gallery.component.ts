@@ -1,34 +1,71 @@
-import { Component, OnInit } from '@angular/core';
-import { GalleryModule, GalleryItem, ImageItem } from 'ng-gallery';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit, computed, inject, signal } from '@angular/core';
+import { Gallery, GalleryComponent, GalleryItem, ImageItem, VideoItem } from 'ng-gallery';
+import { GallerizeDirective } from 'ng-gallery/lightbox';
+import { PopupService } from '../../services/popup.service';
 
 @Component({
   selector: 'custom-gallery',
-  template: ` <gallery [items]="images" thumbPosition="bottom" style="height: 100%;"></gallery> `,
+  templateUrl: 'gallery.component.html',
   standalone: true,
-  imports: [GalleryModule],
+  imports: [CommonModule, GalleryComponent, GallerizeDirective],
+  styles: [`
+  gallery {
+    width: 100%;
+  }`
+  ]
 })
 export class CustomGalleryComponent implements OnInit {
-  images!: GalleryItem[];
+  images: GalleryItem[] = [];
+  currentImageIndex = 0;
+  signal = signal<'cover' | 'contain'>('contain')
+  public popupService = inject(PopupService)
+
+  constructor(public gallery: Gallery) {
+    let media = this.popupService.popupContent.galleryData!.media;
+    this.images = media.map(m => m.type ===  'img' ? new ImageItem({src: m.src}) : new VideoItem({src: m.src, controls: m.controls, mute: true}))
+  }
 
   ngOnInit() {
-    // Set items array
-    this.images = [
-      new ImageItem({
-        src: 'assets/pictures/ancoa.webp',
-        thumb: 'assets/pictures/ancoa.webp',
-      }),
-      new ImageItem({
-        src: 'assets/pictures/cayo.webp',
-        thumb: 'assets/pictures/cayo.webp',
-      }),
-      new ImageItem({
-        src: 'assets/pictures/cementerio.webp',
-        thumb: 'assets/pictures/cementerio.webp',
-      }),
-      new ImageItem({
-        src: 'assets/pictures/cienfuegos.webp',
-        thumb: 'assets/pictures/cienfuegos.webp',
-      }),
-    ];
+    this.getImageSize(this.currentImageIndex);
+  }
+
+  getImageSize(index: number): any {
+    const image: any  = new Image();
+    image.src = this.images[index].data?.src;
+    console.log(image.src, index)
+    image.onload = () => {
+      console.log(image.width, image.height)
+      let imageSize: 'cover' | 'contain' = image.width > image.height ? 'cover' : 'contain';
+      let isLandscape = image.width > image.height;
+      let isDesktop = window.innerWidth > 1024
+      if(isLandscape && isDesktop){
+        imageSize = 'cover'
+        this.signal.set(imageSize);
+        return
+      }
+      if(!isLandscape && isDesktop){
+        imageSize = 'contain'
+        this.signal.set(imageSize);
+        return
+      }
+      if(isLandscape && !isDesktop){
+        imageSize = 'contain'
+        this.signal.set(imageSize);
+        return
+      }
+      if(!isLandscape && !isDesktop){
+        imageSize = 'cover'
+        this.signal.set(imageSize);
+        return
+      }
+    };
+  }
+
+  public imageSizeComputed = computed(() => this.signal())
+
+  handleChange(event: any){
+    this.currentImageIndex = event.currIndex;
+    this.getImageSize(this.currentImageIndex)
   }
 }

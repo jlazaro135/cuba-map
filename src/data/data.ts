@@ -19,6 +19,12 @@ export const markerData1: MarkerData[] = [
         en: 'Habana Centre',
       },
       imgUrl: 'assets/pictures/old_havana.webp',
+      galleryData: {
+        media: [
+          { src: 'assets/pictures/habana/old_havana.webp', type: 'img'},
+          { src: 'assets/pictures/habana/lada.webp', type: 'img'},
+        ]
+      },
       alt: 'galiano',
       description: {
         es: `Centro Habana se encuentra entre los municipios de Habana Vieja al este, Plaza de la Revolución al oeste, y el malecón al norte,
@@ -46,32 +52,6 @@ export const markerData1: MarkerData[] = [
       },
     },
     coordinates: [23.139154, -82.363582],
-  },
-  {
-    popupContent: {
-      title: {
-        es: 'Plaza Vieja',
-        en: 'Plaza Vieja',
-      },
-      imgUrl: 'assets/pictures/plaza-vieja.webp',
-      alt: 'plaza-vieja',
-      description: {
-        es: `
-        La Plaza Vieja fue creada en 1559 y originalmente se conocía como Plaza Nueva. Fue un espacio abierto utilizado para ejercicios militares y, más tarde, como un mercado. A lo largo de los siglos, la plaza ha pasado por diversas transformaciones y ha sido testigo de múltiples acontecimientos históricos, incluyendo ejecuciones públicas y celebraciones populares.
-        <br><br>
-        Es un lugar de gran importancia en La Habana, no solo por su belleza arquitectónica y su historia, sino también por su papel como epicentro cultural y social. Es un lugar que invita a ser explorado y disfrutado, ofreciendo a los visitantes una inmersión en la esencia de la vida cubana.
-        <br><br>
-        <a href="https://es.wikipedia.org/wiki/Plaza_Vieja_de_La_Habana" target="_blank">Saber más sobre la Plaza Vieja</a>
-        `,
-        en: `Plaza Vieja was created in 1559 and originally known as Plaza Nueva. It was an open space used for military exercises and later as a market. Over the centuries, the plaza has undergone various transformations and witnessed numerous historical events, including public executions and popular celebrations.
-        <br><br>
-        It is a place of great importance in Havana, not only for its architectural beauty and history but also for its role as a cultural and social epicenter. It is a place that invites exploration and enjoyment, offering visitors an immersion in the essence of Cuban life.
-        <br><br>
-        <a href="https://en.wikipedia.org/wiki/Plaza_Vieja_(Havana)" target="_blank">Learn more about Plaza Vieja</a>
-        `,
-      },
-    },
-    coordinates: [23.135886, -82.349988],
   },
   {
     popupContent: {
@@ -232,7 +212,13 @@ export const markerData: MarkerData[] = [
         es: 'Plaza Vieja',
         en: 'Plaza Vieja',
       },
-      imgUrl: 'assets/pictures/plaza-vieja.webp',
+      imgUrl: 'assets/pictures/habana/plaza-vieja.webp',
+      galleryData: {
+        media: [
+          { src: 'assets/pictures/habana/plaza-vieja.webp', type: 'img'},
+          { src: 'assets/pictures/habana/plaza-vieja-mov.webm', type: 'video', controls: true},
+        ]
+      },
       alt: 'plaza-vieja',
       description: {
         es: `
@@ -403,7 +389,13 @@ export const markerData: MarkerData[] = [
         es: 'Palacio de los Capitanes Generales',
         en: 'Palace of the Captains General',
       },
-      imgUrl: 'assets/pictures/generales.webp',
+      imgUrl: 'assets/pictures/habana/generales.webp',
+      galleryData: {
+        media: [
+          { src: 'assets/pictures/habana/generales.webp', type: 'img'},
+          { src: 'assets/pictures/habana/plaza-armas-2.webp', type: 'img'},
+        ]
+      },
       alt: 'generales',
       description: {
         es: `
@@ -503,7 +495,15 @@ export const markerData: MarkerData[] = [
         es: 'Malecón',
         en: 'Malecon',
       },
-      imgUrl: 'assets/pictures/malecon-2.webp',
+      imgUrl: 'assets/pictures/habana/malecon-2.webp',
+      galleryData: {
+        media: [
+          { src: 'assets/pictures/habana/malecon.webp', type: 'img'},
+          { src: 'assets/pictures/habana/malecon-2.webp', type: 'img'},
+          { src: 'assets/pictures/habana/malecon-3.webp', type: 'img'},
+          { src: 'assets/pictures/habana/malecon.webm', type: 'video', controls: true},
+        ]
+      },
       alt: 'malecon',
       description: {
         es: `
@@ -714,6 +714,13 @@ export const markerData: MarkerData[] = [
         en: 'Viñales Valley',
       },
       imgUrl: 'assets/pictures/viñales-1.webp',
+      galleryData: {
+        media: [
+          { src: 'assets/pictures/test-vid.mp4', type: 'video',  controls: true, mute: true },
+          { src: 'assets/pictures/test-pic.jpg', type: 'img' },
+          { src: 'assets/pictures/cementerio.webp', type: 'img' },
+        ]
+      },
       alt: 'vinales',
       description: {
         es: `
