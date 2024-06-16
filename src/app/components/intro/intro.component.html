@@ -1,0 +1,10 @@
+@if (!introService.isHidden) {
+  <div class="wrapper">
+    <div class="content-wrapper">
+      <h1>Tasting Cuba</h1>
+      <p [innerHTML]="getDescription()"></p>
+      <div class="btn-intro" (click)="handleClick()">{{this.langService.lang() === 'es' ? 'Ver mapa' : 'See map'}}</div>
+    </div>
+  </div>
+}
+

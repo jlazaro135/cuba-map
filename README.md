@@ -28,9 +28,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Status
 
-1. hay que cribar imagenes que se quieren incluir. Las de la nikon estan ya en la carpeta Cuba, hay que cribar videos e imagenes de google fotos
+1. hay que cribar imagenes que se quieren incluir. Las de la nikon estan ya en la carpeta Cuba, hay que cribar videos e imagenes de google fotos (DONE)
 
-2. hay que convertir todo a formato webp o webm
+2. hay que convertir todo a formato webp o webm (DONE)
 
 3. hay que crear nuevos puntos de interés y hay que añadir el nuevo objeto "galleryData" a todos los objetos actuales
 

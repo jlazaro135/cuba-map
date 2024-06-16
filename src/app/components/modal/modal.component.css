@@ -46,7 +46,7 @@
 .popup-description-overflow {
   margin: 0;
   overflow-y: auto;
-  max-height: 550px;
+  /* max-height: 550px; */
 }
 
 .popup-description-wrapper {

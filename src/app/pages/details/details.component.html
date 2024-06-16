@@ -1,14 +1,14 @@
 <div class="wrapper">
   <header class="back" >
-    <a [routerLink]="['/']">Volver Atrás</a>
+    <a [routerLink]="['/']">{{ langService.lang() === 'es' ? 'Volver al mapa' : 'Back to map'  }}</a>
   </header>
   <main class="content-wrapper">
     <div class="image-wrapper">
-      <!-- <img (load)="setDescriptionHeight()" class="image" [src]="imgUrl()" [alt]="alt()"> -->
        <custom-gallery />
     </div>
     <div class="description-wrapper">
       <h2 class="content-title" #title>{{ photoTitle() }}</h2>
+      <span class="content-place"> {{ place() }} </span>
       <p class="content-description" [innerHTML]="description()">
       </p>
     </div>

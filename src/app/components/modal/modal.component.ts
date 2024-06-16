@@ -1,5 +1,13 @@
-import { Component, ElementRef, EventEmitter, Output, ViewChild, computed, inject } from '@angular/core';
-import { PopupService } from '../../services/popup.service';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Output,
+  ViewChild,
+  computed,
+  inject,
+} from '@angular/core';
+import { PopupService } from '../../services/point.service';
 import { LangService } from '../../services/lang.service';
 import { CustomGalleryComponent } from '../galllery/gallery.component';
 
@@ -8,7 +16,7 @@ import { CustomGalleryComponent } from '../galllery/gallery.component';
   standalone: true,
   imports: [CustomGalleryComponent],
   templateUrl: './modal.component.html',
-  styleUrl: './modal.component.css'
+  styleUrl: './modal.component.css',
 })
 export class ModalComponent {
   @Output() close = new EventEmitter<void>();
@@ -20,15 +28,22 @@ export class ModalComponent {
 
   private currentOrientation: number;
 
-  public popupContentService = inject(PopupService)
-  public langService = inject(LangService)
+  public pointContentService = inject(PopupService);
+  public langService = inject(LangService);
 
-  public photoTitle = computed(() => this.popupContentService.popupContent?.title[this.langService.lang()])
-  public description = computed(() => this.popupContentService.popupContent?.description?.[this.langService.lang()])
-  public imgUrl = computed(() => this.popupContentService.popupContent?.imgUrl)
-  public alt = computed(() => this.popupContentService.popupContent?.alt)
+  public photoTitle = computed(
+    () => this.pointContentService.pointContent?.title[this.langService.lang()]
+  );
+  public description = computed(
+    () =>
+      this.pointContentService.pointContent?.description?.[
+        this.langService.lang()
+      ]
+  );
+  public imgUrl = computed(() => this.pointContentService.pointContent?.imgUrl);
+  public alt = computed(() => this.pointContentService.pointContent?.alt);
 
-  constructor(){
+  constructor() {
     this.currentOrientation = window.screen.orientation.angle;
     this.onOrientationChange = this.onOrientationChange.bind(this);
   }
@@ -40,7 +55,7 @@ export class ModalComponent {
   ngOnInit() {
     // Add event listener when component initializes
     window.addEventListener('orientationchange', this.onOrientationChange);
-    console.log(this.description())
+    console.log(this.description());
   }
 
   ngOnDestroy() {
@@ -53,10 +68,10 @@ export class ModalComponent {
     console.log(`New orientation: ${orientation}`);
     if (orientation === 0 || orientation === 180) {
       console.log('Portrait mode');
-      setTimeout(() => this.setDescriptionHeight(), 100)
+      setTimeout(() => this.setDescriptionHeight(), 100);
     } else if (orientation === 90 || orientation === -90) {
       console.log('Landscape mode');
-      setTimeout(() => this.setDescriptionHeight(), 100)
+      setTimeout(() => this.setDescriptionHeight(), 100);
     }
   }
 
@@ -66,12 +81,12 @@ export class ModalComponent {
 
     const title = this.titleElement.nativeElement;
     const titleHeight = title.getBoundingClientRect().height;
-    console.log(contentHeight, titleHeight)
+    console.log(contentHeight, titleHeight);
 
-    this.descriptionHeight = contentHeight - titleHeight - 24 +'px'
+    this.descriptionHeight = contentHeight - titleHeight - 24 + 'px';
   }
 
-  isDesktop(){
-    return window.screen.width > 1200
+  isDesktop() {
+    return window.screen.width > 1200;
   }
 }
