@@ -29,7 +29,7 @@ export class IntroComponent {
       Hola! Soy Jesús Lázaro, desarrollador web y he desarrollado esta aplicación como respuesta a la pregunta:
       <span>"¿Qué tal tu viaje por Cuba?".</span><br>
       La mejor forma que he encontrado de responder a esa pregunta es mediante este mapa interactivo, donde podrás encontrar marcadores
-      de los sitios mas interesantes que hemos vistado, con imágenes y videos tomados por Silvia y por mí, junto con un pequeña descripción del lugar.
+      de los sitios mas interesantes que hemos vistado, con imágenes y videos tomados por Silvia y por mí, junto con una pequeña descripción del lugar.
       <br><br>
       ¡Espero que lo disfrutes!`
     }
