@@ -72,6 +72,7 @@ export class HomeComponent {
   public cities: Cities[];
 
   public e = effect(() => {
+    console.log(this.langService.lang())
     if (this.langService.lang()) {
       this.onLangChange();
     }

@@ -47,7 +47,6 @@ export class CustomGalleryComponent implements OnInit {
     image.src = this.images[index].data?.src;
     console.log(image.src, index);
     image.onload = () => {
-      console.log(image.width, image.height);
       let imageSize: 'cover' | 'contain' =
         image.width > image.height ? 'cover' : 'contain';
       let isLandscape = image.width > image.height;
